@@ -1,0 +1,60 @@
+#MA nav{
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:  #fffad8;
+    /* box-shadow: 0 4px 6px -4px rgba(188, 110, 27, 0.3); */
+    padding: 10px 0px 0px;
+  }
+  
+#MA nav a{
+  position: relative; /* 讓 ::after 相對於 <a> 定位 */
+  font-size: 20px;
+  font-size: 18px;
+  line-height: 36px;
+  padding: 0px 25px 10px;
+  margin: 0px;
+  color: #333;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+#MA nav a::after {
+  content: ""; /* 產生一條橫線 */
+  position: absolute;
+  left: 50%; /* 初始位置在中間 */
+  bottom: 8px;
+  width: 0; /* 一開始寬度為 0 */
+  height: 3px;
+  background-color: #bc6e1b;;
+  transition: all 0.3s ease-in-out; /* 添加動畫效果 */
+  transform: translateX(-50%); /* 確保線條居中 */
+}
+
+#MA nav a:last-child::after {
+  background-color: #ea3f24;
+}
+
+#MA nav a:hover::after {
+  width: 60%; /* 滑鼠移上時展開 */
+}
+
+@media screen and (max-width:600px){
+  #MA nav{
+    padding-bottom: 5px;
+  }
+  #MA nav a{
+    padding:0px 25px 5px;
+  }
+}
+
+@media screen and (max-width:560px){
+  #MA nav{
+    padding-bottom: 5px;
+  }
+  #MA nav a{
+    padding:0px 10px 5px;
+
+  }
+}

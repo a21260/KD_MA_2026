@@ -1,0 +1,39 @@
+/* Reset CSS for scope */
+
+/* =========上架請改成這段#MA的版本，將作用限縮在MA區塊，避免影響到網頁其他地方========== */
+#MA, 
+#MA div, #MA span, #MA applet, #MA object, #MA iframe,
+#MA h1, #MA h2, #MA h3, #MA h4, #MA h5, #MA h6, #MA p, #MA blockquote, #MA pre,
+#MA a, #MA abbr, #MA acronym, #MA address, #MA big, #MA cite, #MA code,
+#MA del, #MA dfn, #MA em, #MA img, #MA ins, #MA kbd, #MA q, #MA s, #MA samp,
+#MA small, #MA strike, #MA strong, #MA sub, #MA sup, #MA tt, #MA var,
+#MA b, #MA u, #MA i, #MA center,
+#MA dl, #MA dt, #MA dd, #MA ol, #MA ul, #MA li,
+#MA fieldset, #MA form, #MA label, #MA legend,
+#MA table, #MA caption, #MA tbody, #MA tfoot, #MA thead, #MA tr, #MA th, #MA td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* =========上架請刪掉以下這段========== */
+/* #MA, 
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+} */

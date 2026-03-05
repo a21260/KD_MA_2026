@@ -1,0 +1,79 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 140px;
+}
+
+
+
+/* =========上架請加上"#MA"========== */
+#MA h2, #MA h3, #MA h4, #MA p, #MA a, #MA ol, #MA li, #MA span{
+    font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "Arial", sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+    -webkit-text-size-adjust: none;
+    -webkit-overflow-scrolling: touch;
+    word-wrap: break-word;
+    text-align:justify;
+}
+#MA h2{
+    color:#bc6e1b;
+    margin-bottom:40px;
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+    position: relative;
+    font-weight:bold;
+}
+
+#MA h2::after{
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #bc6e1b;
+    display: block;
+    position: absolute;
+    top: calc(50% + 20px);
+    left: calc(50% - 10px);
+}
+
+#MA h3{
+    font-size: 18px;
+    color:black;
+    line-height: 2;
+    font-weight:bold;
+
+}
+
+#MA h4{
+    font-size: 16px;
+    color:#333;
+    line-height: 2;
+    font-weight:bold;
+}
+
+#MA .highlight{
+    background-color: #fff5b3;
+    color: rgb(0, 0, 0);
+    padding: 3px 15px;
+    border-radius: 15px;
+    margin: 5px 5px;
+
+}
+#MA .highlight_2{
+    background: linear-gradient(transparent 50%, #fff5b3 50%);
+}
+
+#MA .red{
+    color: #ea3f24;
+}
+
+/* 定義動畫 */
+@keyframes pulse {
+    0% {
+        transform: scale(1);  /* 原始大小 */
+    }
+    100% {
+        transform: scale(1.1); 
+    }
+}
