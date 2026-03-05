@@ -28,7 +28,7 @@
   right: 30px;
   top: 50px;
   display: block;
-  background: url("./img/MA_icon_more.svg");
+  background: url("../img/MA_icon_more.svg");
   transition: transform 0.5s ease-in-out;  
 }
 
