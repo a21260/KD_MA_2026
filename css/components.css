@@ -175,7 +175,7 @@
 /* =====翻轉卡片===== */
 
 #MA#MA .card_container{
-  max-width: 900px;
+  max-width: min(calc(100% - 20px), 900px);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
