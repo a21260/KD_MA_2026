@@ -3,9 +3,15 @@ html{
     scroll-padding-top: 140px;
 }
 
-
+/* 上傳網頁時調整 */
+#MA#MA{
+    width: 100%;
+    margin: auto;
+    
+}
 
 /* =========上架請加上"#MA#MA"========== */
+
 #MA#MA h2, #MA#MA h3, #MA#MA h4, #MA#MA p, #MA#MA a, #MA#MA ol, #MA#MA li, #MA#MA span{
     font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "Arial", sans-serif;
     font-size: 16px;
