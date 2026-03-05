@@ -1,8 +1,10 @@
 /* 上傳網頁時調整 */
 #MA{
     width: 100%;
-    max-width: 1250px;
     margin: auto;
+    /* 上傳官網時刪除 */
+    /* max-width: 1250px; */
+    
   }
 
 
