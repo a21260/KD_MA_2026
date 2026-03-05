@@ -1,14 +1,14 @@
 /* ====== 下拉卡片 ===== */
 
-#MA .box_wrapper{
+.edit-wrap #MA .box_wrapper{
   overflow: hidden;
 }
 
-#MA .box_wrapper ol{
+.edit-wrap #MA .box_wrapper ol{
   padding: 0px 30px 30px 45px;
 }
 
-#MA input[type="checkbox"] {
+.edit-wrap #MA input[type="checkbox"] {
   position: absolute;
   margin: 0;
   width: 100%;
@@ -20,7 +20,7 @@
   cursor: pointer;
 }
 
-#MA .icon_open{
+.edit-wrap #MA .icon_open{
   position: absolute;
   margin: 0;
   width: 20px;
@@ -32,29 +32,29 @@
   transition: transform 0.5s ease-in-out;  
 }
 
-#MA input[type="checkbox"]:checked + .icon_open {
+.edit-wrap #MA input[type="checkbox"]:checked + .icon_open {
   transform: rotate(180deg);
 }
 
-#MA input[type="checkbox"]:checked ~ .box_content {
+.edit-wrap #MA input[type="checkbox"]:checked ~ .box_content {
   grid-template-rows: 1fr;
 }
 
-#MA .box_container{
+.edit-wrap #MA .box_container{
   display: flex;
   flex-direction: row;
   gap: 10px;
   padding: 0px 8px;
 }
 
-#MA .column{
+.edit-wrap #MA .column{
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#MA .box{
+.edit-wrap #MA .box{
   position: relative;
   border-radius: 8px;
   width: 100%; 
@@ -63,12 +63,12 @@
   transition: box-shadow 0.3s ease;
 }
 
-#MA .box_header{
+.edit-wrap #MA .box_header{
   border-radius: 8px;
   background-color: #ffffff;
 }
 
-#MA .box_content {
+.edit-wrap #MA .box_content {
   display: grid;
   grid-template-rows: 0fr;
   transition: 
@@ -76,7 +76,7 @@
     transform 0.1s ease;
 }
 
-#MA .box_header_content{
+.edit-wrap #MA .box_header_content{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -84,25 +84,25 @@
   transition: transform 0.1s ease;
 }
 
-#MA .box_header_content span{
+.edit-wrap #MA .box_header_content span{
   text-align: center;
 }
 
-#MA .box_header_content span p{
+.edit-wrap #MA .box_header_content span p{
   display: inline-block;
 }
 
-#MA .box_header h3{
+.edit-wrap #MA .box_header h3{
   margin: 0px 15px 0px 5px;
 }
 
-#MA .box_header img{
+.edit-wrap #MA .box_header img{
   height: 90px;
   margin: 15px 5px 15px 15px;
 }
 
 /* box hover效果 */
-#MA .box::after {
+.edit-wrap #MA .box::after {
   content: "";
   position: absolute;
   inset: -2px;
@@ -112,21 +112,21 @@
   transition: opacity 0.3s ease;
 }
 
-#MA .box:hover::after {
+.edit-wrap #MA .box:hover::after {
   opacity: 1;
 }
 
-#MA .box:hover{
+.edit-wrap #MA .box:hover{
   box-shadow: 0px 0px 0px rgba(188, 110, 27, 0);
 }
 
 /* RWD */
 @media screen and (max-width:1160px){
-  #MA .column{
+  .edit-wrap #MA .column{
     width: 100%;
     max-width: 900px;
   }
-  #MA .box_container{
+  .edit-wrap #MA .box_container{
     flex-direction: column;
     align-items: center;  
   }
@@ -134,39 +134,39 @@
 
 @media screen and (max-width:900px){
   
-  #MA .box_header_content span p{
+  .edit-wrap #MA .box_header_content span p{
     display: inline-block;
   }
 }
 
 @media screen and (max-width:600px){
-  #MA .box_header_content span p{
+  .edit-wrap #MA .box_header_content span p{
     display:block;
   }
 }
 
 @media screen and (max-width:500px){
-  #MA .box_header_content{
+  .edit-wrap #MA .box_header_content{
     flex-direction: column;
     justify-content: center;
   }
 
-  #MA .box_header_content span p{
+  .edit-wrap #MA .box_header_content span p{
     display:inline-block;
   }
 
-  #MA .box_header_content img{
+  .edit-wrap #MA .box_header_content img{
     margin: 15px 0 0 0;
   }
 
-  #MA .box_header h3{
+  .edit-wrap #MA .box_header h3{
     margin: 0;
   }
 
-  #MA .box_header_content span{
+  .edit-wrap #MA .box_header_content span{
     margin: 0 5px 20px 5px;
   }
-  #MA .box_header_content span P{
+  .edit-wrap #MA .box_header_content span P{
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -174,7 +174,7 @@
 
 /* =====翻轉卡片===== */
 
-#MA .card_container{
+.edit-wrap #MA .card_container{
   max-width: 900px;
   display: flex;
   flex-direction: row;
@@ -185,7 +185,7 @@
   margin: auto;
 }
 
-#MA .card {
+.edit-wrap #MA .card {
   width: 440px;
   height: 440px;
   perspective: 1000px;
@@ -194,7 +194,7 @@
   position: relative;
 }
 
-#MA .card-inner {
+.edit-wrap #MA .card-inner {
   width: 100%;
   min-height: 100%;
   align-items: stretch;
@@ -202,11 +202,11 @@
   transition: transform 0.6s;
 }
 
-#MA .card-inner.flipped {
+.edit-wrap #MA .card-inner.flipped {
   transform: rotateY(180deg);
 }
 
-#MA .card-front_and_back {
+.edit-wrap #MA .card-front_and_back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -218,14 +218,14 @@
   transition: box-shadow 0.3s ease;
 }
 
-#MA .img_container{
+.edit-wrap #MA .img_container{
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: absolute;
 }
 
-#MA .card-front_and_back::after {
+.edit-wrap #MA .card-front_and_back::after {
   content: "";
   position: absolute;
   inset: -2px;
@@ -235,15 +235,15 @@
   transition: opacity 0.3s ease;
 }
 
-#MA .card-front_and_back:hover::after {
+.edit-wrap #MA .card-front_and_back:hover::after {
   opacity: 1;
 }
 
-#MA .card-front_and_back:hover{
+.edit-wrap #MA .card-front_and_back:hover{
   box-shadow: 0px 0px 0px rgba(188, 110, 27, 0);
 }
 
-#MA .card-front img{
+.edit-wrap #MA .card-front img{
   height: 100%;
   position: absolute;
   top: 20px;
@@ -253,7 +253,7 @@
   z-index: -2;
 }
 /* 白色漸層 */
-#MA .white_gradient {
+.edit-wrap #MA .white_gradient {
   position: absolute;
   top: 0;
   left: 0;
@@ -265,7 +265,7 @@
   z-index: -1;
 }
 /* 顏色漸層 */
-#MA .color_gradient {
+.edit-wrap #MA .color_gradient {
   position: absolute;
   top: 0;
   left: 0;
@@ -276,17 +276,17 @@
   z-index: -3;
 }
 
-#MA .card-back {
+.edit-wrap #MA .card-back {
   background: radial-gradient(circle at 50% 30%, #fffdef 20%, #ffffff 60%);
   transform: rotateY(180deg); /* 預設背面翻轉 */
 }
 
-#MA .card-front:hover .color_gradient,
-#MA .card-back:hover {
+.edit-wrap #MA .card-front:hover .color_gradient,
+.edit-wrap #MA .card-back:hover {
   background: radial-gradient(circle at 50% 30%, #fffad8 20%, #ffffff);
 }
 
-#MA .card_content{
+.edit-wrap #MA .card_content{
   width: calc(100% - 60px);  
   height: calc(100% - 60px);
   display: flex;
@@ -297,92 +297,92 @@
   overflow: hidden;
 }
 
-#MA .card-front .title{
+.edit-wrap #MA .card-front .title{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-#MA .card-back .title{
+.edit-wrap #MA .card-back .title{
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-#MA .card-front .card_content{
+.edit-wrap #MA .card-front .card_content{
   align-items: start;
   justify-content: space-between;
 }
 
-#MA .card-front h3{
+.edit-wrap #MA .card-front h3{
   margin-top: 20px;
 }
 
 /* 上浮 */
-#MA .card-front p,
-#MA .card-front h3{
+.edit-wrap #MA .card-front p,
+.edit-wrap #MA .card-front h3{
   transition: margin 0.5s ease-in-out;
 }
-#MA .card:hover .card-front p{
+.edit-wrap #MA .card:hover .card-front p{
   margin-bottom: 10px;
 }
-#MA .card:hover .card-front h3{
+.edit-wrap #MA .card:hover .card-front h3{
   margin-top: 13px;
 }
 
-#MA .card:hover .card-front h3, 
-#MA .card:hover .card-front .more,
-#MA .card:hover .card-back h3{
+.edit-wrap #MA .card:hover .card-front h3, 
+.edit-wrap #MA .card:hover .card-front .more,
+.edit-wrap #MA .card:hover .card-back h3{
   color:#bc6e1b;
 }
 
-#MA .card-back .highlight,
-#MA .card-back h3{
+.edit-wrap #MA .card-back .highlight,
+.edit-wrap #MA .card-back h3{
   display: inline;
 }
 
-#MA .card-back p,
-#MA .card-back .title{
+.edit-wrap #MA .card-back p,
+.edit-wrap #MA .card-back .title{
   margin-bottom: 8px;
 }
 
-#MA .card-back .highlight{
+.edit-wrap #MA .card-back .highlight{
   transform: translateY(-15%);
 }
 
 /* RWD */
 @media screen and (max-width:444px){
-  #MA .card {
+  .edit-wrap #MA .card {
     height: 450px;
   }
 }
 
 @media screen and (max-width:400px){
-  #MA .card {
+  .edit-wrap #MA .card {
     height: 480px;
   }
 }
 @media screen and (max-width:382px){
-  #MA .card {
+  .edit-wrap #MA .card {
     height: 480px;
   }
-  #MA .card-back p{
+  .edit-wrap #MA .card-back p{
     display: inline;
   }
 }
 @media screen and (max-width:366px){
-  #MA .card {
+  .edit-wrap #MA .card {
     height: 500px;
   }
 }
 @media screen and (max-width:350px){
-  #MA .card {
+  .edit-wrap #MA .card {
     height: 520px;
   }
 }
 @media screen and (max-width:334px){
-  #MA .card {
+  .edit-wrap #MA .card {
     height: 550px;
   }
 }
@@ -393,7 +393,7 @@
 /* ===== 輪播圖 ===== */
 
 /* 輪播外框 */
-#MA .carousel {
+.edit-wrap #MA .carousel {
   position: relative;
   width: 100%;
   max-width: 700px;
@@ -403,19 +403,19 @@
 }
 
 /* 圖片容器 */
-#MA .carousel-track {
+.edit-wrap #MA .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
 /* 單張圖片 */
-#MA .carousel-slide {
+.edit-wrap #MA .carousel-slide {
   width: 100%;
   object-fit: cover;
 }
 
 /* 按鈕 */
-#MA .carousel-btn {
+.edit-wrap #MA .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -432,22 +432,22 @@
   justify-content: center;
 }
 
-#MA .prev {
+.edit-wrap #MA .prev {
   left: 10px;
   padding: 0 2px 2px 0;
 }
 
-#MA .next {
+.edit-wrap #MA .next {
   right: 10px;
   padding: 0 0 2px 2px;
 }
 
-#MA .carousel-btn:hover {
+.edit-wrap #MA .carousel-btn:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 
 /* 小圓點 */
-#MA .carousel-dots {
+.edit-wrap #MA .carousel-dots {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -456,7 +456,7 @@
   gap: 10px;
 }
 
-#MA .carousel-dots div {
+.edit-wrap #MA .carousel-dots div {
   width: 8px;
   height: 8px;
   background: rgba(255, 255, 255, 0.5);
@@ -464,7 +464,7 @@
   cursor: pointer;
 }
 
-#MA .carousel-dots .active {
+.edit-wrap #MA .carousel-dots .active {
   background: white;
   width: 10px;
   height: 10px;
@@ -473,7 +473,7 @@
 
 /* RWD */
 @media (max-width: 700px) {
-  #MA .carousel-slide {
+  .edit-wrap #MA .carousel-slide {
       height: auto;
   }
 }

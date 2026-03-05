@@ -1,4 +1,4 @@
-#MA nav{
+.edit-wrap #MA nav{
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
@@ -8,7 +8,7 @@
     padding: 10px 0px 0px;
   }
   
-#MA nav a{
+.edit-wrap #MA nav a{
   position: relative; /* 讓 ::after 相對於 <a> 定位 */
   font-size: 20px;
   font-size: 18px;
@@ -20,7 +20,7 @@
   font-weight:bold;
 }
 
-#MA nav a::after {
+.edit-wrap #MA nav a::after {
   content: ""; /* 產生一條橫線 */
   position: absolute;
   left: 50%; /* 初始位置在中間 */
@@ -32,28 +32,28 @@
   transform: translateX(-50%); /* 確保線條居中 */
 }
 
-#MA nav a:last-child::after {
+.edit-wrap #MA nav a:last-child::after {
   background-color: #ea3f24;
 }
 
-#MA nav a:hover::after {
+.edit-wrap #MA nav a:hover::after {
   width: 60%; /* 滑鼠移上時展開 */
 }
 
 @media screen and (max-width:600px){
-  #MA nav{
+  .edit-wrap #MA nav{
     padding-bottom: 5px;
   }
-  #MA nav a{
+  .edit-wrap #MA nav a{
     padding:0px 25px 5px;
   }
 }
 
 @media screen and (max-width:560px){
-  #MA nav{
+  .edit-wrap #MA nav{
     padding-bottom: 5px;
   }
-  #MA nav a{
+  .edit-wrap #MA nav a{
     padding:0px 10px 5px;
 
   }
