@@ -1,16 +1,16 @@
 /* Reset CSS for scope */
 
-/* =========上架請改成這段html body #MA的版本，將作用限縮在MA區塊，避免影響到網頁其他地方========== */
-html body #MA, 
-html body #MA div, html body #MA span, html body #MA applet, html body #MA object, html body #MA iframe,
-html body #MA h1, html body #MA h2, html body #MA h3, html body #MA h4, html body #MA h5, html body #MA h6, html body #MA p, html body #MA blockquote, html body #MA pre,
-html body #MA a, html body #MA abbr, html body #MA acronym, html body #MA address, html body #MA big, html body #MA cite, html body #MA code,
-html body #MA del, html body #MA dfn, html body #MA em, html body #MA img, html body #MA ins, html body #MA kbd, html body #MA q, html body #MA s, html body #MA samp,
-html body #MA small, html body #MA strike, html body #MA strong, html body #MA sub, html body #MA sup, html body #MA tt, html body #MA var,
-html body #MA b, html body #MA u, html body #MA i, html body #MA center,
-html body #MA dl, html body #MA dt, html body #MA dd, html body #MA ol, html body #MA ul, html body #MA li,
-html body #MA fieldset, html body #MA form, html body #MA label, html body #MA legend,
-html body #MA table, html body #MA caption, html body #MA tbody, html body #MA tfoot, html body #MA thead, html body #MA tr, html body #MA th, html body #MA td {
+/* =========上架請改成這段#MA#MA的版本，將作用限縮在MA區塊，避免影響到網頁其他地方========== */
+#MA#MA, 
+#MA#MA div, #MA#MA span, #MA#MA applet, #MA#MA object, #MA#MA iframe,
+#MA#MA h1, #MA#MA h2, #MA#MA h3, #MA#MA h4, #MA#MA h5, #MA#MA h6, #MA#MA p, #MA#MA blockquote, #MA#MA pre,
+#MA#MA a, #MA#MA abbr, #MA#MA acronym, #MA#MA address, #MA#MA big, #MA#MA cite, #MA#MA code,
+#MA#MA del, #MA#MA dfn, #MA#MA em, #MA#MA img, #MA#MA ins, #MA#MA kbd, #MA#MA q, #MA#MA s, #MA#MA samp,
+#MA#MA small, #MA#MA strike, #MA#MA strong, #MA#MA sub, #MA#MA sup, #MA#MA tt, #MA#MA var,
+#MA#MA b, #MA#MA u, #MA#MA i, #MA#MA center,
+#MA#MA dl, #MA#MA dt, #MA#MA dd, #MA#MA ol, #MA#MA ul, #MA#MA li,
+#MA#MA fieldset, #MA#MA form, #MA#MA label, #MA#MA legend,
+#MA#MA table, #MA#MA caption, #MA#MA tbody, #MA#MA tfoot, #MA#MA thead, #MA#MA tr, #MA#MA th, #MA#MA td {
   margin: 0;
   padding: 0;
   border: 0;

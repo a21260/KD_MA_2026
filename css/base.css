@@ -5,8 +5,8 @@ html{
 
 
 
-/* =========上架請加上"html body #MA"========== */
-html body #MA h2, html body #MA h3, html body #MA h4, html body #MA p, html body #MA a, html body #MA ol, html body #MA li, html body #MA span{
+/* =========上架請加上"#MA#MA"========== */
+#MA#MA h2, #MA#MA h3, #MA#MA h4, #MA#MA p, #MA#MA a, #MA#MA ol, #MA#MA li, #MA#MA span{
     font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "Arial", sans-serif;
     font-size: 16px;
     color: #333;
@@ -16,7 +16,7 @@ html body #MA h2, html body #MA h3, html body #MA h4, html body #MA p, html body
     word-wrap: break-word;
     text-align:justify;
 }
-html body #MA h2{
+#MA#MA h2{
     color:#bc6e1b;
     margin-bottom:40px;
     font-size: 25px;
@@ -26,7 +26,7 @@ html body #MA h2{
     font-weight:bold;
 }
 
-html body #MA h2::after{
+#MA#MA h2::after{
     content: "";
     width: 20px;
     height: 3px;
@@ -37,7 +37,7 @@ html body #MA h2::after{
     left: calc(50% - 10px);
 }
 
-html body #MA h3{
+#MA#MA h3{
     font-size: 18px;
     color:black;
     line-height: 2;
@@ -45,14 +45,14 @@ html body #MA h3{
 
 }
 
-html body #MA h4{
+#MA#MA h4{
     font-size: 16px;
     color:#333;
     line-height: 2;
     font-weight:bold;
 }
 
-html body #MA .highlight{
+#MA#MA .highlight{
     background-color: #fff5b3;
     color: rgb(0, 0, 0);
     padding: 3px 15px;
@@ -60,11 +60,11 @@ html body #MA .highlight{
     margin: 5px 5px;
 
 }
-html body #MA .highlight_2{
+#MA#MA .highlight_2{
     background: linear-gradient(transparent 50%, #fff5b3 50%);
 }
 
-html body #MA .MA_red{
+#MA#MA .MA_red{
     color: #ea3f24;
 }
 

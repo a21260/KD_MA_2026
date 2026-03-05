@@ -1,5 +1,5 @@
 /* 上傳網頁時調整 */
-html body #MA{
+#MA#MA{
     width: 100%;
     margin: auto;
     /* 上傳官網時刪除 */
@@ -9,13 +9,13 @@ html body #MA{
 
 
 /* ===== article設定 ===== */
-html body #MA article{
+#MA#MA article{
     padding: 60px 0px;
     /* overflow: hidden; */
 }
 
 /* article裝飾 */
-html body #MA #company{
+#MA#MA #company{
     padding-bottom: calc(60px + 2vw);
     overflow: hidden;
     clip-path: polygon(
@@ -29,7 +29,7 @@ html body #MA #company{
 }
 
 
-html body #MA #plan{
+#MA#MA #plan{
     padding-top:  calc(60px + 4vw);
     padding-bottom: calc(60px + 2vw);
     overflow: hidden;
@@ -44,7 +44,7 @@ html body #MA #plan{
     margin: 0px 0px -4vw 0px;
 }
 
-html body #MA #time{
+#MA#MA #time{
     padding-top:  calc(60px + 4vw);
     overflow: hidden;
     clip-path: polygon(
@@ -63,17 +63,17 @@ html body #MA #time{
   
 /* ===== header ===== */
 
-html body #MA .banner_container{
+#MA#MA .banner_container{
     position: relative;
     width: 100%;
 }
 
-html body #MA .banner img{
+#MA#MA .banner img{
     width: 100%;
     display: block;
 }
 
-html body #MA .tag{
+#MA#MA .tag{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -82,13 +82,13 @@ html body #MA .tag{
     height: auto;  
 }
 
-html body #MA .tag img{
+#MA#MA .tag img{
   display: block;
   width: 100%;
   height: auto;
 }
 
-html body #MA .tag_text{
+#MA#MA .tag_text{
   position: absolute;
   inset: 0;
   display: flex;
@@ -100,7 +100,7 @@ html body #MA .tag_text{
 }
 
 @media screen and (max-width:600px){
-    html body #MA .tag{
+    #MA#MA .tag{
         left: 50%;
         transform: translateX(-50%);
     }
@@ -108,7 +108,7 @@ html body #MA .tag_text{
 
 /* ===== 公司簡介 ===== */
 
-html body #MA .company_container{
+#MA#MA .company_container{
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -117,38 +117,38 @@ html body #MA .company_container{
     gap: 30px;
 }
 
-html body #MA #company{
+#MA#MA #company{
     background-color: #fffdef; 
 }
 
-html body #MA .company_container img{
+#MA#MA .company_container img{
     width: 50%;
 }
 
-html body #MA .company_container p{
+#MA#MA .company_container p{
     margin-bottom: 8px;
 }
 
-html body #MA .company_container>div{
+#MA#MA .company_container>div{
     padding-right: 40px;
 }
 
 @media screen and (max-width:800px){
-    html body #MA .company_container{
+    #MA#MA .company_container{
         flex-direction: column;   
     }
 
-    html body #MA .company_container>div{
+    #MA#MA .company_container>div{
         padding: 0px 20px;
     }
-    html body #MA .company_container img{
+    #MA#MA .company_container img{
         width: 100%;
     }
 }
 
 
 /* ===== 計畫說明 ===== */
-html body #MA #plan{
+#MA#MA #plan{
     background-color:  #fffad8;
     display: flex;
     justify-content: center;  
@@ -156,12 +156,12 @@ html body #MA #plan{
     padding-right: 20px;
 }
 
-html body #MA .plan_contianer{
+#MA#MA .plan_contianer{
     width: 100%;
     max-width: 800px;    
 }
 
-html body #MA .plan_time_wrapper{
+#MA#MA .plan_time_wrapper{
     width: calc(100% - 40px);
     display: flex;
     flex-direction: column;
@@ -171,13 +171,13 @@ html body #MA .plan_time_wrapper{
 }
 
 /* ===== 招募時程 ===== */
-html body #MA #time{
+#MA#MA #time{
     background-color: #fffdef;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-html body #MA .circle {
+#MA#MA .circle {
     width: 100px;
     height: 100px;
     background-color: #d98e23;
@@ -189,17 +189,17 @@ html body #MA .circle {
     animation: pulse 1.0s infinite alternate ease-in-out; /* 動畫設定 */
 }
 
-html body #MA .circle span{
+#MA#MA .circle span{
     color: #ffffff;
     font-weight: bold;
     margin: 0;
 }
 
-html body #MA .circle .date{
+#MA#MA .circle .date{
     font-size: 22px;
 }
 
-html body #MA .schedule_container{
+#MA#MA .schedule_container{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -207,16 +207,16 @@ html body #MA .schedule_container{
     flex-wrap: wrap;
 }
 
-html body #MA .schedule>p{
+#MA#MA .schedule>p{
     margin: 10px 0px 10px 0px;  
 }
 
-html body #MA .icon_right{
+#MA#MA .icon_right{
     width: 20px;
     padding-bottom: 20px;
 }
 
-html body #MA .schedule{
+#MA#MA .schedule{
     margin: 0px 5px 0px;
     display: flex;
     flex-direction: column;
@@ -225,31 +225,31 @@ html body #MA .schedule{
 }
 
 @media screen and (max-width:820px){
-    html body #MA .schedule_container{
+    #MA#MA .schedule_container{
         max-width: 500px;
     }
 
-    html body #MA .schedule, html body #MA .icon_right{
+    #MA#MA .schedule, #MA#MA .icon_right{
         margin-bottom: 30px;
     }
 
-    html body #MA .schedule:last-of-type {
+    #MA#MA .schedule:last-of-type {
         margin-right: 40px;
     }
 }
 
 @media screen and (max-width:460px){
-    html body #MA .schedule_container{
+    #MA#MA .schedule_container{
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
 
-    html body #MA .schedule{
+    #MA#MA .schedule{
         margin-bottom: 0px;
     }
 
-    html body #MA .icon_right{
+    #MA#MA .icon_right{
         transform: rotate(90deg);
         display: block;
         margin: 0;
@@ -258,7 +258,7 @@ html body #MA .schedule{
 }
 
 /* ===== QA ===== */
-html body #MA #QA{
+#MA#MA #QA{
     background-color: #fffdef;
     display: flex;
     justify-content: center;  
@@ -266,7 +266,7 @@ html body #MA #QA{
     padding-right: 20px;
 }
 
-#QA h3 span{
+#MA#MA #QA h3 span{
     font-size: 18px;
     color:rgb(255, 255, 255);
     line-height: 2;
@@ -279,23 +279,23 @@ html body #MA #QA{
     margin-left: -5.5px;
 }
 
-#QA p{
+#MA#MA #QA p{
     margin-bottom: 20px;
 }
 
-#QA p:last-child{
+#MA#MA #QA p:last-child{
     margin-bottom: 0px;
 }
 
 /* ===== KD豐富生活 ====== */
 
-html body #MA #life{
+#MA#MA #life{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-html body #MA .life_container{
+#MA#MA .life_container{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -304,13 +304,13 @@ html body #MA .life_container{
     margin: 0px 0px 20px;
 }
 
-html body #MA .life_card{
+#MA#MA .life_card{
     padding: 30px;
     max-width: 400px;
     position: relative;
   }
 
-html body #MA .life_card::before{
+#MA#MA .life_card::before{
   content: "";
   position: absolute;
   inset: -80px; 
@@ -325,49 +325,49 @@ html body #MA .life_card::before{
   border-radius: 50%;
 }
 
-html body #MA .life_card ul{
+#MA#MA .life_card ul{
     padding: 0px 0px 0px 20px;
 }
 
-html body #MA .no_reverse{
+#MA#MA .no_reverse{
     flex-direction: row; 
 }
 
 /* RWD */
 @media screen and (max-width:900px){
-    html body #MA .life_container{
+    #MA#MA .life_container{
         flex-direction: column;
         align-items: flex-start;
     }
-    html body #MA .life_card{
+    #MA#MA .life_card{
         padding: 0 0 0 20px;
         box-shadow: none;
         background: none;
         max-width: 100%; 
     }
-    html body #MA .life_card ul{
+    #MA#MA .life_card ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2欄 */
         gap: 0px 40px;
     }
 
-    html body #MA .life_card li{
+    #MA#MA .life_card li{
     white-space: nowrap;
     }
 
-    html body #MA .life_card::before{
+    #MA#MA .life_card::before{
         display: none;
     }
 }
 
 @media screen and (max-width:550px){
-    html body #MA .life_card ul{
+    #MA#MA .life_card ul{
         grid-template-columns: 1fr;
     }
 }
 
 /* 完整福利 */
-html body #MA .benefits{
+#MA#MA .benefits{
     padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -376,7 +376,7 @@ html body #MA .benefits{
     
 }
 
-html body #MA .benefits-grid{
+#MA#MA .benefits-grid{
     width:100%;
     max-width: calc(120px * 7 + 10px * 6);
     display: grid;
@@ -387,37 +387,37 @@ html body #MA .benefits-grid{
     padding: 20px 0;    
 }
 
-html body #MA .benefit{
+#MA#MA .benefit{
     width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
 
-html body #MA .benefit_icon {
+#MA#MA .benefit_icon {
     width: 100px;
     height: 100px;
 }
 
-html body #MA .benefit p{
+#MA#MA .benefit p{
     margin: 10px 0px 10px 0px;
     text-align: center;
 }
 
 @media screen and (max-width: 550px){
-    html body #MA .benefits-grid{
+    #MA#MA .benefits-grid{
         max-width: calc(120px * 3 + 10px * 2);
     }
 }
 
 @media screen and (max-width: 415px){
-    html body #MA .benefits-grid{
+    #MA#MA .benefits-grid{
         max-width: calc(120px * 2 + 10px * 1);
     }
 }
 
 /* CTA */
-html body #MA #CTA{
+#MA#MA #CTA{
     background-color: #fffad8;
     display: flex;
     justify-content: center;  
@@ -428,7 +428,7 @@ html body #MA #CTA{
     width: calc(100% - 40px);
 }
 
-html body #MA #CTA a{
+#MA#MA #CTA a{
     background: linear-gradient(to right, #bc6e1b, #d98e23);
     color: white;
     padding: 15px 80px;
@@ -438,7 +438,7 @@ html body #MA #CTA a{
     animation: pulse 1.0s infinite alternate ease-in-out; /* 動畫設定 */
   }
 
-html body #MA #CTA a:hover{
+#MA#MA #CTA a:hover{
     background: linear-gradient(to right, #d98e23, #ffc400);
     padding: 17px 82px;
 }
