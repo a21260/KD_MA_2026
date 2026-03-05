@@ -1,5 +1,5 @@
 /* 上傳網頁時調整 */
-.edit-wrap #MA{
+html body #MA{
     width: 100%;
     margin: auto;
     /* 上傳官網時刪除 */
@@ -9,13 +9,13 @@
 
 
 /* ===== article設定 ===== */
-.edit-wrap #MA article{
+html body #MA article{
     padding: 60px 0px;
     /* overflow: hidden; */
 }
 
 /* article裝飾 */
-.edit-wrap #MA #company{
+html body #MA #company{
     padding-bottom: calc(60px + 2vw);
     overflow: hidden;
     clip-path: polygon(
@@ -29,7 +29,7 @@
 }
 
 
-.edit-wrap #MA #plan{
+html body #MA #plan{
     padding-top:  calc(60px + 4vw);
     padding-bottom: calc(60px + 2vw);
     overflow: hidden;
@@ -44,7 +44,7 @@
     margin: 0px 0px -4vw 0px;
 }
 
-.edit-wrap #MA #time{
+html body #MA #time{
     padding-top:  calc(60px + 4vw);
     overflow: hidden;
     clip-path: polygon(
@@ -63,17 +63,17 @@
   
 /* ===== header ===== */
 
-.edit-wrap #MA .banner_container{
+html body #MA .banner_container{
     position: relative;
     width: 100%;
 }
 
-.edit-wrap #MA .banner img{
+html body #MA .banner img{
     width: 100%;
     display: block;
 }
 
-.edit-wrap #MA .tag{
+html body #MA .tag{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -82,13 +82,13 @@
     height: auto;  
 }
 
-.edit-wrap #MA .tag img{
+html body #MA .tag img{
   display: block;
   width: 100%;
   height: auto;
 }
 
-.edit-wrap #MA .tag_text{
+html body #MA .tag_text{
   position: absolute;
   inset: 0;
   display: flex;
@@ -100,7 +100,7 @@
 }
 
 @media screen and (max-width:600px){
-    .edit-wrap #MA .tag{
+    html body #MA .tag{
         left: 50%;
         transform: translateX(-50%);
     }
@@ -108,7 +108,7 @@
 
 /* ===== 公司簡介 ===== */
 
-.edit-wrap #MA .company_container{
+html body #MA .company_container{
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -117,38 +117,38 @@
     gap: 30px;
 }
 
-.edit-wrap #MA #company{
+html body #MA #company{
     background-color: #fffdef; 
 }
 
-.edit-wrap #MA .company_container img{
+html body #MA .company_container img{
     width: 50%;
 }
 
-.edit-wrap #MA .company_container p{
+html body #MA .company_container p{
     margin-bottom: 8px;
 }
 
-.edit-wrap #MA .company_container>div{
+html body #MA .company_container>div{
     padding-right: 40px;
 }
 
 @media screen and (max-width:800px){
-    .edit-wrap #MA .company_container{
+    html body #MA .company_container{
         flex-direction: column;   
     }
 
-    .edit-wrap #MA .company_container>div{
+    html body #MA .company_container>div{
         padding: 0px 20px;
     }
-    .edit-wrap #MA .company_container img{
+    html body #MA .company_container img{
         width: 100%;
     }
 }
 
 
 /* ===== 計畫說明 ===== */
-.edit-wrap #MA #plan{
+html body #MA #plan{
     background-color:  #fffad8;
     display: flex;
     justify-content: center;  
@@ -156,12 +156,12 @@
     padding-right: 20px;
 }
 
-.edit-wrap #MA .plan_contianer{
+html body #MA .plan_contianer{
     width: 100%;
     max-width: 800px;    
 }
 
-.edit-wrap #MA .plan_time_wrapper{
+html body #MA .plan_time_wrapper{
     width: calc(100% - 40px);
     display: flex;
     flex-direction: column;
@@ -171,13 +171,13 @@
 }
 
 /* ===== 招募時程 ===== */
-.edit-wrap #MA #time{
+html body #MA #time{
     background-color: #fffdef;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.edit-wrap #MA .circle {
+html body #MA .circle {
     width: 100px;
     height: 100px;
     background-color: #d98e23;
@@ -189,17 +189,17 @@
     animation: pulse 1.0s infinite alternate ease-in-out; /* 動畫設定 */
 }
 
-.edit-wrap #MA .circle span{
+html body #MA .circle span{
     color: #ffffff;
     font-weight: bold;
     margin: 0;
 }
 
-.edit-wrap #MA .circle .date{
+html body #MA .circle .date{
     font-size: 22px;
 }
 
-.edit-wrap #MA .schedule_container{
+html body #MA .schedule_container{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -207,16 +207,16 @@
     flex-wrap: wrap;
 }
 
-.edit-wrap #MA .schedule>p{
+html body #MA .schedule>p{
     margin: 10px 0px 10px 0px;  
 }
 
-.edit-wrap #MA .icon_right{
+html body #MA .icon_right{
     width: 20px;
     padding-bottom: 20px;
 }
 
-.edit-wrap #MA .schedule{
+html body #MA .schedule{
     margin: 0px 5px 0px;
     display: flex;
     flex-direction: column;
@@ -225,31 +225,31 @@
 }
 
 @media screen and (max-width:820px){
-    .edit-wrap #MA .schedule_container{
+    html body #MA .schedule_container{
         max-width: 500px;
     }
 
-    .edit-wrap #MA .schedule, .edit-wrap #MA .icon_right{
+    html body #MA .schedule, html body #MA .icon_right{
         margin-bottom: 30px;
     }
 
-    .edit-wrap #MA .schedule:last-of-type {
+    html body #MA .schedule:last-of-type {
         margin-right: 40px;
     }
 }
 
 @media screen and (max-width:460px){
-    .edit-wrap #MA .schedule_container{
+    html body #MA .schedule_container{
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
 
-    .edit-wrap #MA .schedule{
+    html body #MA .schedule{
         margin-bottom: 0px;
     }
 
-    .edit-wrap #MA .icon_right{
+    html body #MA .icon_right{
         transform: rotate(90deg);
         display: block;
         margin: 0;
@@ -258,7 +258,7 @@
 }
 
 /* ===== QA ===== */
-.edit-wrap #MA #QA{
+html body #MA #QA{
     background-color: #fffdef;
     display: flex;
     justify-content: center;  
@@ -289,13 +289,13 @@
 
 /* ===== KD豐富生活 ====== */
 
-.edit-wrap #MA #life{
+html body #MA #life{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.edit-wrap #MA .life_container{
+html body #MA .life_container{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -304,13 +304,13 @@
     margin: 0px 0px 20px;
 }
 
-.edit-wrap #MA .life_card{
+html body #MA .life_card{
     padding: 30px;
     max-width: 400px;
     position: relative;
   }
 
-.edit-wrap #MA .life_card::before{
+html body #MA .life_card::before{
   content: "";
   position: absolute;
   inset: -80px; 
@@ -325,49 +325,49 @@
   border-radius: 50%;
 }
 
-.edit-wrap #MA .life_card ul{
+html body #MA .life_card ul{
     padding: 0px 0px 0px 20px;
 }
 
-.edit-wrap #MA .no_reverse{
+html body #MA .no_reverse{
     flex-direction: row; 
 }
 
 /* RWD */
 @media screen and (max-width:900px){
-    .edit-wrap #MA .life_container{
+    html body #MA .life_container{
         flex-direction: column;
         align-items: flex-start;
     }
-    .edit-wrap #MA .life_card{
+    html body #MA .life_card{
         padding: 0 0 0 20px;
         box-shadow: none;
         background: none;
         max-width: 100%; 
     }
-    .edit-wrap #MA .life_card ul{
+    html body #MA .life_card ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2欄 */
         gap: 0px 40px;
     }
 
-    .edit-wrap #MA .life_card li{
+    html body #MA .life_card li{
     white-space: nowrap;
     }
 
-    .edit-wrap #MA .life_card::before{
+    html body #MA .life_card::before{
         display: none;
     }
 }
 
 @media screen and (max-width:550px){
-    .edit-wrap #MA .life_card ul{
+    html body #MA .life_card ul{
         grid-template-columns: 1fr;
     }
 }
 
 /* 完整福利 */
-.edit-wrap #MA .benefits{
+html body #MA .benefits{
     padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -376,7 +376,7 @@
     
 }
 
-.edit-wrap #MA .benefits-grid{
+html body #MA .benefits-grid{
     width:100%;
     max-width: calc(120px * 7 + 10px * 6);
     display: grid;
@@ -387,37 +387,37 @@
     padding: 20px 0;    
 }
 
-.edit-wrap #MA .benefit{
+html body #MA .benefit{
     width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
 
-.edit-wrap #MA .benefit_icon {
+html body #MA .benefit_icon {
     width: 100px;
     height: 100px;
 }
 
-.edit-wrap #MA .benefit p{
+html body #MA .benefit p{
     margin: 10px 0px 10px 0px;
     text-align: center;
 }
 
 @media screen and (max-width: 550px){
-    .edit-wrap #MA .benefits-grid{
+    html body #MA .benefits-grid{
         max-width: calc(120px * 3 + 10px * 2);
     }
 }
 
 @media screen and (max-width: 415px){
-    .edit-wrap #MA .benefits-grid{
+    html body #MA .benefits-grid{
         max-width: calc(120px * 2 + 10px * 1);
     }
 }
 
 /* CTA */
-.edit-wrap #MA #CTA{
+html body #MA #CTA{
     background-color: #fffad8;
     display: flex;
     justify-content: center;  
@@ -428,7 +428,7 @@
     width: calc(100% - 40px);
 }
 
-.edit-wrap #MA #CTA a{
+html body #MA #CTA a{
     background: linear-gradient(to right, #bc6e1b, #d98e23);
     color: white;
     padding: 15px 80px;
@@ -438,7 +438,7 @@
     animation: pulse 1.0s infinite alternate ease-in-out; /* 動畫設定 */
   }
 
-.edit-wrap #MA #CTA a:hover{
+html body #MA #CTA a:hover{
     background: linear-gradient(to right, #d98e23, #ffc400);
     padding: 17px 82px;
 }

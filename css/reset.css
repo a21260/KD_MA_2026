@@ -1,16 +1,16 @@
 /* Reset CSS for scope */
 
-/* =========上架請改成這段.edit-wrap #MA的版本，將作用限縮在MA區塊，避免影響到網頁其他地方========== */
-.edit-wrap #MA, 
-.edit-wrap #MA div, .edit-wrap #MA span, .edit-wrap #MA applet, .edit-wrap #MA object, .edit-wrap #MA iframe,
-.edit-wrap #MA h1, .edit-wrap #MA h2, .edit-wrap #MA h3, .edit-wrap #MA h4, .edit-wrap #MA h5, .edit-wrap #MA h6, .edit-wrap #MA p, .edit-wrap #MA blockquote, .edit-wrap #MA pre,
-.edit-wrap #MA a, .edit-wrap #MA abbr, .edit-wrap #MA acronym, .edit-wrap #MA address, .edit-wrap #MA big, .edit-wrap #MA cite, .edit-wrap #MA code,
-.edit-wrap #MA del, .edit-wrap #MA dfn, .edit-wrap #MA em, .edit-wrap #MA img, .edit-wrap #MA ins, .edit-wrap #MA kbd, .edit-wrap #MA q, .edit-wrap #MA s, .edit-wrap #MA samp,
-.edit-wrap #MA small, .edit-wrap #MA strike, .edit-wrap #MA strong, .edit-wrap #MA sub, .edit-wrap #MA sup, .edit-wrap #MA tt, .edit-wrap #MA var,
-.edit-wrap #MA b, .edit-wrap #MA u, .edit-wrap #MA i, .edit-wrap #MA center,
-.edit-wrap #MA dl, .edit-wrap #MA dt, .edit-wrap #MA dd, .edit-wrap #MA ol, .edit-wrap #MA ul, .edit-wrap #MA li,
-.edit-wrap #MA fieldset, .edit-wrap #MA form, .edit-wrap #MA label, .edit-wrap #MA legend,
-.edit-wrap #MA table, .edit-wrap #MA caption, .edit-wrap #MA tbody, .edit-wrap #MA tfoot, .edit-wrap #MA thead, .edit-wrap #MA tr, .edit-wrap #MA th, .edit-wrap #MA td {
+/* =========上架請改成這段html body #MA的版本，將作用限縮在MA區塊，避免影響到網頁其他地方========== */
+html body #MA, 
+html body #MA div, html body #MA span, html body #MA applet, html body #MA object, html body #MA iframe,
+html body #MA h1, html body #MA h2, html body #MA h3, html body #MA h4, html body #MA h5, html body #MA h6, html body #MA p, html body #MA blockquote, html body #MA pre,
+html body #MA a, html body #MA abbr, html body #MA acronym, html body #MA address, html body #MA big, html body #MA cite, html body #MA code,
+html body #MA del, html body #MA dfn, html body #MA em, html body #MA img, html body #MA ins, html body #MA kbd, html body #MA q, html body #MA s, html body #MA samp,
+html body #MA small, html body #MA strike, html body #MA strong, html body #MA sub, html body #MA sup, html body #MA tt, html body #MA var,
+html body #MA b, html body #MA u, html body #MA i, html body #MA center,
+html body #MA dl, html body #MA dt, html body #MA dd, html body #MA ol, html body #MA ul, html body #MA li,
+html body #MA fieldset, html body #MA form, html body #MA label, html body #MA legend,
+html body #MA table, html body #MA caption, html body #MA tbody, html body #MA tfoot, html body #MA thead, html body #MA tr, html body #MA th, html body #MA td {
   margin: 0;
   padding: 0;
   border: 0;

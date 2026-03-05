@@ -1,12 +1,12 @@
-document.querySelectorAll(".edit-wrap #MA .card").forEach(card => {
+document.querySelectorAll("html body #MA .card").forEach(card => {
     card.addEventListener("click", function () {
-      this.querySelector(".edit-wrap #MA .card-inner").classList.toggle("flipped"); // 個別翻轉
+      this.querySelector("html body #MA .card-inner").classList.toggle("flipped"); // 個別翻轉
     });
 });
 
 // ===== 輪播圖（手動版）=====
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".edit-wrap #MA .carousel").forEach((carousel) => {
+  document.querySelectorAll("html body #MA .carousel").forEach((carousel) => {
 
     const track = carousel.querySelector(".carousel-track");
     const prevBtn = carousel.querySelector(".prev");
