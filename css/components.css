@@ -54,7 +54,7 @@
   gap: 10px;
 }
 
-#MA#MA .box{
+#MA#MA .MA_box{
   position: relative;
   border-radius: 8px;
   width: 100%; 
@@ -245,7 +245,6 @@
 
 #MA#MA .card-front img{
   height: 100% !important;
-  width: auto !important;
   position: absolute;
   top: 20px;
   left: calc(50% + 50px);
