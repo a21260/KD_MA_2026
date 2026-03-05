@@ -102,7 +102,7 @@
 }
 
 /* box hover效果 */
-#MA#MA .box::after {
+#MA#MA .MA_box::after {
   content: "";
   position: absolute;
   inset: -2px;
@@ -112,11 +112,11 @@
   transition: opacity 0.3s ease;
 }
 
-#MA#MA .box:hover::after {
+#MA#MA .MA_box:hover::after {
   opacity: 1;
 }
 
-#MA#MA .box:hover{
+#MA#MA .MA_box:hover{
   box-shadow: 0px 0px 0px rgba(188, 110, 27, 0);
 }
 
