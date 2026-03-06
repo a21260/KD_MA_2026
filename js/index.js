@@ -4,6 +4,46 @@ document.querySelectorAll("#MA#MA .card").forEach(card => {
     });
 });
 
+// ===== 翻翻卡 =====
+document.addEventListener('DOMContentLoaded', function () {
+  const scrollAreas = document.querySelectorAll('#MA#MA .card-back .card_content > div:last-child');
+
+  function updateScrollableState(area) {
+    area.classList.remove('is-scrollable', 'is-scrolled-to-bottom');
+
+    const isScrollable = area.scrollHeight > area.clientHeight + 2;
+
+    if (isScrollable) {
+      area.classList.add('is-scrollable');
+
+      const isAtBottom = area.scrollTop + area.clientHeight >= area.scrollHeight - 2;
+      if (isAtBottom) {
+        area.classList.add('is-scrolled-to-bottom');
+      }
+    }
+  }
+
+  function checkScrollable() {
+    scrollAreas.forEach(updateScrollableState);
+  }
+
+  scrollAreas.forEach(area => {
+    area.addEventListener('scroll', function () {
+      const isAtBottom = area.scrollTop + area.clientHeight >= area.scrollHeight - 2;
+      area.classList.toggle('is-scrolled-to-bottom', isAtBottom);
+    });
+  });
+
+  checkScrollable();
+  window.addEventListener('load', checkScrollable);
+  window.addEventListener('resize', checkScrollable);
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(checkScrollable);
+  }
+});
+
+
 // ===== 輪播圖（手動版）=====
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("#MA#MA .carousel").forEach((carousel) => {
