@@ -172,12 +172,13 @@
   }
 }
 
+
+
 /* =====翻轉卡片===== */
 
 #MA#MA .card_container{
   max-width: min(calc(100% - 20px), 900px);
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
@@ -187,7 +188,9 @@
 
 #MA#MA .card {
   width: 440px;
-  height: 440px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  min-height: 440px;
   perspective: 1000px;
   cursor: pointer;
   display: block;
@@ -196,8 +199,9 @@
 
 #MA#MA .card-inner {
   width: 100%;
+  height: 100%;
   min-height: 100%;
-  align-items: stretch;
+  position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
@@ -210,10 +214,10 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   border-radius: 10px;
-  backface-visibility: hidden; /* 隱藏背面 */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   box-shadow: 0px 0px 6px rgba(188, 110, 27, 0.3);
   transition: box-shadow 0.3s ease;
 }
@@ -233,13 +237,14 @@
   border-radius: 12px;
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
-#MA#MA .card-front_and_back:hover::after {
+#MA#MA .card:hover .card-front_and_back::after {
   opacity: 1;
 }
 
-#MA#MA .card-front_and_back:hover{
+#MA#MA .card:hover .card-front_and_back{
   box-shadow: 0px 0px 0px rgba(188, 110, 27, 0);
 }
 
@@ -252,33 +257,33 @@
   object-fit: contain;
   z-index: -2;
 }
+
 /* 白色漸層 */
 #MA#MA .white_gradient {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.7) 80%, rgb(255, 255, 255) 100%);
-  pointer-events: none; /* 防止影響點擊 */
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(255, 255, 255, 0.7) 80%,
+    rgb(255, 255, 255) 100%
+  );
+  pointer-events: none;
   z-index: -1;
 }
+
 /* 顏色漸層 */
 #MA#MA .color_gradient {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:radial-gradient(circle at 50% 30%, #fffdef 20%, #ffffff 60%);
-  pointer-events: none; /* 防止影響點擊 */
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, #fffdef 20%, #ffffff 60%);
+  pointer-events: none;
   z-index: -3;
 }
 
 #MA#MA .card-back {
   background: radial-gradient(circle at 50% 30%, #fffdef 20%, #ffffff 60%);
-  transform: rotateY(180deg); /* 預設背面翻轉 */
+  transform: rotateY(180deg);
 }
 
 #MA#MA .card-front:hover .color_gradient,
@@ -287,14 +292,13 @@
 }
 
 #MA#MA .card_content{
-  width: calc(100% - 60px);  
-  height: calc(100% - 60px);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 30px;
   z-index: 3;
-  overflow: hidden;
 }
 
 #MA#MA .card-front .title{
@@ -306,12 +310,12 @@
 
 #MA#MA .card-back .title{
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 #MA#MA .card-front .card_content{
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -319,14 +323,25 @@
   margin-top: 20px;
 }
 
-/* 上浮 */
+/* 背面捲動區 */
+#MA#MA .card-back .card_content > div:last-child{
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 6px;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: auto;
+}
+
 #MA#MA .card-front p,
 #MA#MA .card-front h3{
   transition: margin 0.5s ease-in-out;
 }
+
 #MA#MA .card:hover .card-front p{
   margin-bottom: 10px;
 }
+
 #MA#MA .card:hover .card-front h3{
   margin-top: 13px;
 }
@@ -345,6 +360,7 @@
 #MA#MA .card-back p,
 #MA#MA .card-back .title{
   margin-bottom: 8px;
+  line-height: 1.7;
 }
 
 #MA#MA .card-back .highlight{
@@ -352,42 +368,27 @@
 }
 
 /* RWD */
-@media screen and (max-width:444px){
+@media screen and (max-width: 480px){
   #MA#MA .card {
-    height: 450px;
+    width: 100%;
+    min-height: 420px;
   }
-}
 
-@media screen and (max-width:400px){
-  #MA#MA .card {
-    height: 480px;
+  #MA#MA .card_content{
+    padding: 24px;
   }
-}
-@media screen and (max-width:382px){
-  #MA#MA .card {
-    height: 480px;
-  }
+
   #MA#MA .card-back p{
-    display: inline;
-  }
-}
-@media screen and (max-width:366px){
-  #MA#MA .card {
-    height: 500px;
-  }
-}
-@media screen and (max-width:350px){
-  #MA#MA .card {
-    height: 520px;
-  }
-}
-@media screen and (max-width:334px){
-  #MA#MA .card {
-    height: 550px;
+    font-size: 15px;
   }
 }
 
-
+@media screen and (max-width: 380px){
+  #MA#MA .card {
+    aspect-ratio: auto;
+    min-height: 500px;
+  }
+}
 
 
 /* ===== 輪播圖 ===== */
